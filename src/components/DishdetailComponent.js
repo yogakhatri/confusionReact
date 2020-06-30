@@ -1,7 +1,6 @@
 import React from 'react'
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, Breadcrumb, BreadcrumbItem
+    Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
@@ -58,7 +57,7 @@ const DishDetail = (props) => {
             <div className="row">
                 <RenderDish dish={props.dish} />
                 <div className="col-12 col-md-5 m-1" >
-                <h4>Comments</h4>
+                    <h4>Comments</h4>
                     {comments}
                 </div>
             </div>
