@@ -6,7 +6,6 @@ import {
 import { Link } from 'react-router-dom';
 
 function RenderMenuItem({ dish }) {
-    console.log(dish.image)
     return (
         <Card>
             <Link to={`/menu/${dish.id}`} >
