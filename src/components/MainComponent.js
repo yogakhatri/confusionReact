@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import Menu from './MenuComponent';
-import { DISHES } from '../components/shared/dishes';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComponent';
-import { COMMENTS } from '../components/shared/comments';
-import { PROMOTIONS } from '../components/shared/promotions';
-import { LEADERS } from '../components/shared/leaders';
 import DishDetail from './DishdetailComponent';
 import About from './AboutComponent'
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
