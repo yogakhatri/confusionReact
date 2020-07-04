@@ -130,6 +130,7 @@ const DishDetail = (props) => {
 
     const comments = props.comments.map((comment) => {
         return (
+
             <RenderComments comment={comment} />
         );
     });
