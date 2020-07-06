@@ -5,6 +5,7 @@ import {
 import { Link } from 'react-router-dom';
 import { LocalForm, Errors, Control } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
+import { baseUrl } from '../components/shared/baseUrl';
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
@@ -105,8 +106,7 @@ function RenderDish({ dish }) {
     return (
         <div className="col-12 col-md-5 m-1" key={dish.id}>
             <Card>
-                <CardImg top src={dish.image} alt={dish.name} />
-                <div>
+                <CardImg top src={baseUrl + dish.image} alt={dish.name} />                <div>
                     <Card>
                         <CardBody>
                             <CardTitle><h5>{dish.name}</h5></CardTitle>
